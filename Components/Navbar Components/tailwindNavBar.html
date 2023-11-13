@@ -1,0 +1,51 @@
+<nav class="flex justify-between space-x-10 p-4 bg-white w-full">
+
+    <ul class="hidden lg:flex  space-x-5 text-lg ">
+        <li class=""><a href="#">Home</a></li>
+        <li class=""><a href="#">About</a></li>
+        <li class=""><a href="#">Blog</a></li>
+        <li class=""><a href="#">Contact</a></li>
+    </ul>
+
+    <span class="text-3xl font-bold">MyKotak</span>
+    <div class="space-x-2 hidden lg:flex">
+        <button
+            class="p-2 bg-blue-800 rounded-xl text-white hover:bg-blue-900 transform transition-transform hover:scale-110 ease-in-out">Login</button>
+        <button
+            class="p-2 bg-blue-800 rounded-xl text-white hover:bg-blue-900 transform transition-transform hover:scale-110 ease-in-out">Register</button>
+    </div>
+
+    <span class="lg:hidden" id="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" class="w-10 h-10 cursor-pointer ">
+            <path
+                d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z">
+            </path>
+        </svg>
+    </span>
+</nav>
+
+
+<!-- Responsive mobile navbar -->
+<div id="mobile-menu" class="hidden lg:hidden h-full mb-96 w-full ">
+    <div class="bg-white p-4">
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700">Blog</a>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700">Contact</a>
+    </div>
+    <!-- Mobile menu buttons -->
+    <div class="bg-white p-6 flex flex-row space-x-2">
+        <a href="#"
+            class="p-2 bg-blue-800 rounded-xl text-white hover:bg-blue-900 transform transition-transform hover:scale-110 ease-in-out">Login</a>
+
+        <a href="#"
+            class="p-2 bg-blue-800 rounded-xl text-white hover:bg-blue-900 transform transition-transform hover:scale-110 ease-in-out">Register</a>
+
+    </div>
+</div>
+
+<script>
+    // Toggle mobile menu visibility
+    document.getElementById('burger').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });

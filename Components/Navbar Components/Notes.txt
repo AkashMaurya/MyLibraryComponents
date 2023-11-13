@@ -1,0 +1,4 @@
+#Please add the link in the head file of tailwind css
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
